@@ -12,7 +12,7 @@ function fibonacci(num) {
             prevPrev = prev;
             prev = current;
         }
-        return prev;
+        return prevPrev;
     }
 }
 
@@ -21,5 +21,6 @@ function fibonacci(num) {
 module.exports = fibonacci
 
 // Test cases
-console.log(fibonacci(1)); // Output: 0
+console.log(fibonacci(0)); // Output: 0
+console.log(fibonacci(1)); // Output: 1
 console.log(fibonacci(5)); // Output: 3
