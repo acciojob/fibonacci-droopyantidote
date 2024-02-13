@@ -16,10 +16,10 @@ function fibonacci(num) {
     }
 }
 
-// Test cases
-console.log(fibonacci(1)); // Output: 0
-console.log(fibonacci(5)); // Output: 3
+
 
 module.exports = fibonacci
 
-
+// Test cases
+console.log(fibonacci(1)); // Output: 0
+console.log(fibonacci(5)); // Output: 3
