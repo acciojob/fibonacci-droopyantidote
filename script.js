@@ -12,7 +12,7 @@ function fibonacci(num) {
             prevPrev = prev;
             prev = current;
         }
-        return prevPrev;
+        return prev;
     }
 }
 
