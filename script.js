@@ -1,5 +1,5 @@
 function fibonacci(num) {
-  if (num === 0) {
+   if (num === 0) {
         return 0;
     } else if (num === 1) {
         return 1;
@@ -16,7 +16,4 @@ function fibonacci(num) {
     }
 }
 
-// Test cases
-console.log(fibonacci(1)); // Output: 0
-console.log(fibonacci(5)); // Output: 3
-
+module.exports = fibonacci
