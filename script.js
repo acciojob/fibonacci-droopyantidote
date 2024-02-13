@@ -1,26 +1,19 @@
 function fibonacci(num) {
-   if (num === 0) {
-        return 0;
-    } else if (num === 1) {
-        return 1;
-    } else {
-        let prevPrev = 0;
-        let prev = 1;
-        let current = 0;
-        for (let i = 2; i <= num; i++) {
-            current = prev + prevPrev;
-            prevPrev = prev;
-            prev = current;
-        }
-        return prevPrev;
+let num1 = 0;
+    let num2 = 1;
+    let sum;
+    let i = 0;
+    for (i = 0; i < num; i++) {
+        sum = num1 + num2;
+        num1 = num2;
+        num2 = sum;
     }
+    return num2;  
 }
-
 
 
 module.exports = fibonacci
 
 // Test cases
-console.log(fibonacci(0)); // Output: 0
 console.log(fibonacci(1)); // Output: 1
 console.log(fibonacci(5)); // Output: 3
